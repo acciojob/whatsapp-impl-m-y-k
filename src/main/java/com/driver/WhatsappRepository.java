@@ -112,7 +112,7 @@ public class WhatsappRepository {
             return "Group does not exist";
         }
         // check if the approver is current admin of the group, if not, return error message
-        if (adminMap.get(group).equals(user) == false) {
+        if (adminMap.get(group).equals(approver) == false) {
             return "Approver does not have rights";
         }
         // check if the user exists in the group
